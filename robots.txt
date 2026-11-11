@@ -1,0 +1,9 @@
+# Scalora Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin.html
+Disallow: /wp-admin
+Disallow: /api/
+
+Sitemap: https://scalora.agency/sitemap.xml

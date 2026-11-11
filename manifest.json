@@ -1,0 +1,21 @@
+{
+  "name": "Scalora: Digital presence, scaled.",
+  "short_name": "Scalora",
+  "description": "Scalora builds websites, runs social media and designs brands so your business is seen, followed and chosen.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0B0A0F",
+  "theme_color": "#5C6CFF",
+  "icons": [
+    {
+      "src": "./assets/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "./assets/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
