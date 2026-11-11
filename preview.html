@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="utf-8">
+  <title>Scalora: Digital Presence, Scaled | Web Design, Social Media & Brand Growth Agency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Scalora builds high-converting websites, manages social media channels, and designs iconic brands so your business is seen, followed and chosen. Get a free digital audit today.">
+  <meta name="keywords" content="digital presence, web design agency, social media management, brand design, performance advertising, digital marketing growth, SEO services, Scalora">
+  <meta name="author" content="Scalora">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#0B0A0F">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://scalora.com/">
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://scalora.com/">
+  <meta property="og:title" content="Scalora: Digital Presence, Scaled | Web Design, Social Media & Branding">
+  <meta property="og:description" content="Scalora builds websites, runs social media and designs brands so your business is seen, followed and chosen.">
+  <meta property="og:image" content="https://scalora.com/assets/logo.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Scalora - Digital presence, scaled">
+  <meta property="og:site_name" content="Scalora">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://scalora.com/">
+  <meta name="twitter:title" content="Scalora: Digital Presence, Scaled">
+  <meta name="twitter:description" content="Scalora builds websites, runs social media and designs brands so your business is seen, followed and chosen.">
+  <meta name="twitter:image" content="https://scalora.com/assets/logo.jpg">
+
+  <!-- PWA & Mobile Web -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Structured Data for Google Knowledge Graph & Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://scalora.com/#organization",
+        "name": "Scalora",
+        "url": "https://scalora.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://scalora.com/assets/logo.jpg",
+          "width": 500,
+          "height": 120
+        },
+        "description": "Scalora builds websites, runs social media and designs brands so growing businesses are seen, followed, and chosen.",
+        "email": "hello@scalora.com",
+        "sameAs": [
+          "https://www.facebook.com/scalora",
+          "https://www.instagram.com/scalora",
+          "https://www.linkedin.com/company/scalora",
+          "https://www.youtube.com/@scalora"
+        ],
+        "knowsAbout": [
+          "Web Design and Development",
+          "Social Media Management",
+          "Brand Identity & Logo Design",
+          "Performance Advertising",
+          "Search Engine Optimization (SEO)"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://scalora.com/#website",
+        "url": "https://scalora.com/",
+        "name": "Scalora",
+        "publisher": { "@id": "https://scalora.com/#organization" },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://scalora.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does Scalora scale our digital presence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We combine mobile-first websites, consistent social media management, brand design, and tracked paid advertising so that search engines, social feeds, and AI answer engines present your business as the obvious choice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the 4 steps in the Scalora process?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our process consists of 4 steps: 1. Analyse (audit digital footprint and competitors), 2. Plan (roadmap with priorities, timing and cost), 3. Build (website, profiles and content launched together), and 4. Grow (monthly measurement, management and improvement)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is short vertical video important for digital presence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reels, Shorts and TikTok drive the majority of social media attention. We plan, shoot, and edit vertical short-form video to convert casual scrollers into engaged brand communities."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            bg: '#0B0A0F',
+            brand: '#5C6CFF',
+            ink: '#F4F3F8',
+            mut: '#9a98a8',
+            card: '#13121a',
+            line: 'rgba(255, 255, 255, 0.09)',
+          },
+          fontFamily: {
+            // Space Grotesk: Primary brand font for headlines, display, numbers
+            display: ['"Space Grotesk"', 'Sora', 'system-ui', 'sans-serif'],
+            heading: ['"Space Grotesk"', 'Sora', 'system-ui', 'sans-serif'],
+            // Inter: Secondary font for body, UI, captions, documents
+            sans: ['Inter', 'Manrope', 'system-ui', 'sans-serif'],
+          },
+          letterSpacing: {
+            'display': '-0.03em', // -3% tracking for Display
+            'h1': '-0.02em',      // -2% tracking for Heading 1
+            'h2': '-0.01em',      // -1% tracking for Heading 2
+            'body': '0em',        // 0% tracking for Body
+            'label': '0.08em',    // +8% tracking for Labels
+          },
+          animation: {
+            'mq': 'mq 40s linear infinite',
+            'mq-r': 'mq 40s linear infinite reverse',
+            'shimmer': 'ld 3s ease-in-out infinite alternate',
+          },
+          keyframes: {
+            mq: {
+              to: { transform: 'translateX(-50%)' },
+            },
+            ld: {
+              to: { transform: 'translateX(18px)', opacity: '0.6' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #0B0A0F;
+      --b: #5C6CFF;
+      --ink: #F4F3F8;
+      --mut: #9a98a8;
+      --card: #13121a;
+      --line: rgba(255, 255, 255, 0.09);
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    
+    /* Body: Inter Regular (400), 16 to 18px, 0% tracking, 150 to 160% line height */
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Inter", "Manrope", system-ui, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.55;
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+    
+    /* Display: Space Grotesk Bold (700), 64 to 96px, -3% tracking, 100% line height */
+    .text-display, .font-display {
+      font-family: "Space Grotesk", "Sora", system-ui, sans-serif;
+      font-weight: 700;
+      font-size: clamp(64px, 8.5vw, 96px);
+      letter-spacing: -0.03em;
+      line-height: 1.0;
+    }
+    
+    /* Heading 1: Space Grotesk Bold (700), 40 to 56px, -2% tracking, 110% line height */
+    h1, .text-h1 {
+      font-family: "Space Grotesk", "Sora", system-ui, sans-serif;
+      font-weight: 700;
+      font-size: clamp(40px, 5.5vw, 56px);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    
+    /* Heading 2: Space Grotesk Medium (500), 24 to 32px, -1% tracking, 120% line height */
+    h2, h3, .text-h2 {
+      font-family: "Space Grotesk", "Sora", system-ui, sans-serif;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    /* Body: Inter Regular (400), 16 to 18px, 0% tracking, 150 to 160% line height */
+    p, .text-body {
+      font-family: "Inter", "Manrope", system-ui, sans-serif;
+      font-weight: 400;
+      font-size: clamp(16px, 1.2vw, 18px);
+      line-height: 1.55;
+      letter-spacing: 0;
+    }
+
+    /* Label: Inter SemiBold caps (600), 11 to 12px, +8% tracking */
+    small, .text-label {
+      font-family: "Inter", "Manrope", system-ui, sans-serif;
+      font-weight: 600;
+      font-size: clamp(11px, 0.9vw, 12px);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    
+    .card-glow::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, var(--b) 2.2px, transparent 2.8px);
+      background-size: 22px 22px;
+      opacity: 0;
+      transition: opacity .3s;
+      -webkit-mask-image: radial-gradient(190px circle at var(--x, 50%) var(--y, 50%), #000, transparent);
+      mask-image: radial-gradient(190px circle at var(--x, 50%) var(--y, 50%), #000, transparent);
+      pointer-events: none;
+    }
+    .card-glow:hover::before { opacity: .85; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+  <!-- React 18 and Babel for standalone preview -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect, useRef, useCallback, useMemo } = React;
+    const BRAND_COLOR = '#5C6CFF';
+    const NUM_POINTS = 420;
+    const GOLDEN_ANGLE = 2.39996;
+
+    // Topology arrays
+    const L0 = [], L1 = [], L2 = [], KK = [];
+    for (let i = 0; i < NUM_POINTS; i++) {
+      const k = Math.sqrt((i + 0.5) / NUM_POINTS);
+      const a = i * GOLDEN_ANGLE;
+      const z = 1 - 2 * (i + 0.5) / NUM_POINTS;
+      const r = Math.sqrt(Math.max(0, 1 - z * z));
+      const h = (((Math.sin(i * 12.9898) * 43758.5453) % 1) + 1) % 1;
+      KK.push(k);
+      L0.push([k * Math.cos(a), k * Math.sin(a), 0]);
+      L1.push([r * Math.cos(a), z, r * Math.sin(a)]);
+      L2.push([1.8 * k * Math.cos(a), 1.8 * k * Math.sin(a), (h - 0.5) * 2]);
+    }
+
+    const sm = x => {
+      const c = Math.max(0, Math.min(1, x));
+      return c * c * (3 - 2 * c);
+    };
+    const mix = (a, b, k) => [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, a[2] + (b[2] - a[2]) * k];
+
+    // Radial Glow Sprite
+    const spr = document.createElement('canvas');
+    spr.width = spr.height = 64;
+    {
+      const g = spr.getContext('2d');
+      const rad = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+      rad.addColorStop(0, BRAND_COLOR + 'ee');
+      rad.addColorStop(0.4, BRAND_COLOR + '55');
+      rad.addColorStop(1, BRAND_COLOR + '00');
+      g.fillStyle = rad;
+      g.fillRect(0, 0, 64, 64);
+    }
+
+    // Sphere Canvas Component
+    function SphereCanvas({ id, className, mouse = false, getState }) {
+      const cvRef = useRef(null);
+      const mousePos = useRef({ x: 0, y: 0 });
+
+      useEffect(() => {
+        if (!mouse) return;
+        const onMove = e => {
+          mousePos.current = {
+            x: (e.clientX / window.innerWidth - 0.5) * 2,
+            y: (e.clientY / window.innerHeight - 0.5) * 2
+          };
+        };
+        window.addEventListener('pointermove', onMove, { passive: true });
+        return () => window.removeEventListener('pointermove', onMove);
+      }, [mouse]);
+
+      useEffect(() => {
+        const cv = cvRef.current;
+        if (!cv) return;
+        const ctx = cv.getContext('2d');
+        let W = 0, H = 0, dpr = 1;
+
+        const onResize = () => {
+          dpr = Math.min(2, window.devicePixelRatio || 1);
+          W = cv.clientWidth;
+          H = cv.clientHeight;
+          cv.width = W * dpr;
+          cv.height = H * dpr;
+        };
+        onResize();
+        window.addEventListener('resize', onResize);
+
+        let isVis = true;
+        const obs = new IntersectionObserver(e => isVis = e[0].isIntersecting);
+        obs.observe(cv);
+
+        const t0 = performance.now();
+        const px = new Float32Array(NUM_POINTS);
+        const py = new Float32Array(NUM_POINTS);
+        const pz = new Float32Array(NUM_POINTS);
+        const pr = new Float32Array(NUM_POINTS);
+        const idx = [...Array(NUM_POINTS).keys()];
+
+        let animId;
+        const render = now => {
+          animId = requestAnimationFrame(render);
+          if (!isVis) return;
+          const t = (now - t0) / 1000;
+          const q = getState(t);
+          const s = q.s;
+          const lit = q.lit;
+
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          ctx.clearRect(0, 0, W, H);
+
+          const R = Math.min(W, H) * 0.42 * (q.scale || 1);
+          const cx = W / 2, cy = H / 2;
+          const w = sm(Math.min(1, s * 2));
+          const mx = mousePos.current.x, my = mousePos.current.y;
+
+          const ry = (t * 0.45 + mx * 0.7) * w;
+          const rx = 0.35 * w + my * 0.4 * w;
+          const rz = t * 0.05 * (1 - w);
+
+          const c1 = Math.cos(ry), s1 = Math.sin(ry);
+          const c2 = Math.cos(rx), s2 = Math.sin(rx);
+          const c3 = Math.cos(rz), s3 = Math.sin(rz);
+
+          for (let i = 0; i < NUM_POINTS; i++) {
+            const P = s < 1 ? mix(L0[i], L1[i], sm(s)) : mix(L1[i], L2[i], sm(s - 1));
+            const X = P[0] * c1 + P[2] * s1;
+            const Z = -P[0] * s1 + P[2] * c1;
+            const Y = P[1];
+            const Y2 = Y * c2 - Z * s2;
+            const Z2 = Y * s2 + Z * c2;
+            const X2 = X * c3 - Y2 * s3;
+            const Y3 = X * s3 + Y2 * c3;
+
+            const p = 1 / (1 - Z2 * 0.3);
+            px[i] = cx + X2 * R * p;
+            py[i] = cy + Y3 * R * p;
+            pz[i] = Z2;
+            pr[i] = p;
+          }
+
+          idx.sort((a, b) => pz[a] - pz[b]);
+          const sb = sm(Math.min(1, s));
+
+          for (const i of idx) {
+            const g = Math.min(1, Math.max(0, (t - i * 0.004) * 2.4));
+            const base = (R / Math.sqrt(NUM_POINTS)) * ((0.2 + 0.65 * KK[i]) * (1 - sb) + 0.5 * sb);
+            const r = Math.max(0.5, base * pr[i] * 1.45 * g * (q.dot || 1));
+            const a = s > 0.05 ? 0.35 + 0.65 * Math.min(1, Math.max(0, (pz[i] + 1.2) / 2.4)) : 1;
+            const on = lit == null || i < lit;
+
+            if (on) {
+              ctx.globalCompositeOperation = 'lighter';
+              ctx.globalAlpha = a * 0.5;
+              ctx.drawImage(spr, px[i] - r * 3, py[i] - r * 3, r * 6, r * 6);
+              ctx.globalCompositeOperation = 'source-over';
+            }
+
+            ctx.globalAlpha = on ? a : 0.9;
+            ctx.fillStyle = on ? BRAND_COLOR : '#26252f';
+            ctx.beginPath();
+            ctx.arc(px[i], py[i], r, 0, Math.PI * 2);
+            ctx.fill();
+          }
+          ctx.globalAlpha = 1;
+        };
+
+        animId = requestAnimationFrame(render);
+        return () => {
+          cancelAnimationFrame(animId);
+          window.removeEventListener('resize', onResize);
+          obs.disconnect();
+        };
+      }, [getState, mouse]);
+
+      return <canvas ref={cvRef} id={id} className={className} aria-hidden="true" />;
+    }
+
+    // Cursor Trail
+    function CursorTrail() {
+      const cvRef = useRef(null);
+      useEffect(() => {
+        if (!window.matchMedia('(pointer:fine)').matches) return;
+        const c = cvRef.current;
+        if (!c) return;
+        const g = c.getContext('2d');
+        const pts = [];
+        let W, H;
+        const rz = () => { W = c.width = innerWidth; H = c.height = innerHeight; };
+        rz();
+        window.addEventListener('resize', rz);
+        const onMove = e => pts.push([e.clientX, e.clientY]);
+        window.addEventListener('pointermove', onMove);
+
+        let id;
+        const L = () => {
+          id = requestAnimationFrame(L);
+          g.clearRect(0, 0, W, H);
+          while (pts.length > 16) pts.shift();
+          pts.forEach((p, i) => {
+            const k = i / pts.length;
+            g.fillStyle = BRAND_COLOR;
+            g.globalAlpha = k * 0.7;
+            g.beginPath();
+            g.arc(p[0], p[1], 1 + k * 6, 0, Math.PI * 2);
+            g.fill();
+          });
+          g.globalAlpha = 1;
+          if (pts.length) pts.push(pts[pts.length - 1].slice());
+        };
+        id = requestAnimationFrame(L);
+        return () => {
+          cancelAnimationFrame(id);
+          window.removeEventListener('resize', rz);
+          window.removeEventListener('pointermove', onMove);
+        };
+      }, []);
+      return <canvas ref={cvRef} className="fixed inset-0 w-full h-full pointer-events-none z-50 hidden md:block" aria-hidden="true" />;
+    }
+
+    // Navigation
+    function Navbar() {
+      const [isOpen, setIsOpen] = useState(false);
+      return (
+        <header className="fixed inset-x-0 top-0 z-40 bg-gradient-to-b from-[#0B0A0F] via-[#0B0A0F]/90 to-transparent backdrop-blur-sm">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 h-[78px] flex items-center justify-between gap-4">
+            <a href="#top" className="flex items-center gap-3">
+              <img src="./public/assets/logo.jpg" alt="Scalora" className="h-[38px] w-auto" onError={e=>e.target.style.display='none'} />
+              <span className="text-2xl font-extrabold text-white">Scalora<span className="text-brand">.</span></span>
+            </a>
+            <nav className="hidden md:flex items-center gap-8 font-semibold text-[15px] text-[#9a98a8]">
+              <a href="#services" className="hover:text-white transition-colors">Services</a>
+              <a href="#how" className="hover:text-white transition-colors">How it works</a>
+              <a href="#score" className="hover:text-white transition-colors">Your score</a>
+              <a href="#new" className="hover:text-white transition-colors">What’s new</a>
+            </nav>
+            <div className="flex items-center gap-3">
+              <a href="/admin" target="_blank" className="hidden lg:inline-flex items-center gap-1.5 text-xs text-[#9a98a8] hover:text-white font-semibold px-3 py-1.5 border border-white/10 hover:border-white/30 rounded-full transition-colors">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand"></span>
+                <span>CMS Admin</span>
+              </a>
+              <a href="#contact" className="bg-brand text-white font-semibold text-sm sm:text-[15px] px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_-6px_#5C6CFF]">
+                Get a free audit
+              </a>
+              <button onClick={()=>setIsOpen(!isOpen)} className="md:hidden text-[#9a98a8] hover:text-white p-2">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}/></svg>
+              </button>
+            </div>
+          </div>
+          {isOpen && (
+            <div className="md:hidden bg-[#13121a] border-b border-white/10 px-6 py-4 flex flex-col gap-3 font-semibold text-sm">
+              <a href="#services" onClick={()=>setIsOpen(false)} className="text-[#9a98a8] hover:text-white py-1">Services</a>
+              <a href="#how" onClick={()=>setIsOpen(false)} className="text-[#9a98a8] hover:text-white py-1">How it works</a>
+              <a href="#score" onClick={()=>setIsOpen(false)} className="text-[#9a98a8] hover:text-white py-1">Your score</a>
+              <a href="#new" onClick={()=>setIsOpen(false)} className="text-[#9a98a8] hover:text-white py-1">What’s new</a>
+            </div>
+          )}
+        </header>
+      );
+    }
+
+    // Hero Section
+    function Hero({ data }) {
+      const getHeroSphere = useCallback(t => ({ s: (1 - Math.cos(t * 0.45)) / 2 }), []);
+      const hero = data || {
+        headline: 'Digital presence, scaled.',
+        subheading: 'Scalora builds your website, runs your social media and designs your brand, so more of the right people find you, follow you and choose you.',
+        primaryCta: 'Get a free audit',
+        secondaryCta: 'See what we do',
+        platforms: ['Facebook', 'Instagram', 'LinkedIn', 'YouTube', 'Google'],
+      };
+      return (
+        <section className="relative min-h-[100svh] flex items-end overflow-hidden pt-28 pb-[6vh]">
+          <SphereCanvas id="c1" mouse={true} getState={getHeroSphere} className="absolute -right-[15vw] sm:-right-[6vw] top-1/2 -translate-y-1/2 w-[90vw] sm:w-[min(86vh,62vw)] aspect-square pointer-events-none opacity-85 sm:opacity-100" />
+          <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 className="font-display text-[clamp(56px,8.5vw,96px)] font-bold tracking-[-0.03em] leading-[1.0] max-w-[11ch] text-white">
+              {hero.headline}
+            </h1>
+            <p className="max-w-[480px] my-6 sm:my-8 text-[#9a98a8] text-body font-normal leading-[1.6]">
+              {hero.subheading}
+            </p>
+            <div className="flex flex-wrap gap-3 sm:gap-4 items-center">
+              <a href="#contact" className="inline-block bg-brand text-white font-semibold text-base px-7 py-3.5 rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_-8px_#5C6CFF]">
+                {hero.primaryCta}
+              </a>
+              <a href="#services" className="inline-block border-2 border-white/25 hover:border-white/50 text-white font-semibold text-base px-7 py-3.5 rounded-full transition-all duration-300 hover:-translate-y-1">
+                {hero.secondaryCta}
+              </a>
+            </div>
+            <div className="flex flex-wrap gap-2.5 mt-8 sm:mt-10 text-[#9a98a8] font-semibold text-xs sm:text-sm">
+              {(hero.platforms || []).map(tag => (
+                <span key={tag} className="text-label border border-white/10 rounded-full px-3.5 py-1.5">{tag}</span>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    // Infinite Marquee
+    function Marquee({ items, reverse = false }) {
+      const repeated = Array(4).fill(items).flat();
+      return (
+        <div className="overflow-hidden whitespace-nowrap border-y border-white/10 py-4 select-none" aria-hidden="true">
+          <div className={`inline-flex items-center gap-6 ${reverse ? 'animate-mq-r' : 'animate-mq'}`}>
+            {repeated.map((item, idx) => (
+              <span key={idx} className={`font-extrabold text-[clamp(44px,7.5vw,120px)] tracking-tight leading-none ${reverse ? 'text-transparent [-webkit-text-stroke:2px_rgba(255,255,255,0.35)]' : 'text-transparent [-webkit-text-stroke:2px_#5C6CFF]'}`}>
+                {item}
+                <span className="inline-block w-[0.28em] h-[0.28em] rounded-full bg-brand ml-6 align-middle" />
+              </span>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    // Story Section
+    function StorySection({ data }) {
+      const ref = useRef(null);
+      const [prog, setProg] = useState(0);
+      const defaultStory = [
+        { headline: 'Seen.', description: 'Your website, search and profiles work together so people can find you.' },
+        { headline: 'Followed.', description: 'Consistent content and short video turn visitors into a community.' },
+        { headline: 'Chosen.', description: 'Reviews, results and a clear offer make you the obvious choice.' }
+      ];
+      const storyItems = (data && data.length >= 3) ? data : defaultStory;
+      useEffect(() => {
+        const onScroll = () => {
+          if (!ref.current) return;
+          const r = ref.current.getBoundingClientRect();
+          const p = Math.min(1, Math.max(0, -r.top / (r.height - window.innerHeight)));
+          setProg(p);
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+        return () => window.removeEventListener('scroll', onScroll);
+      }, []);
+
+      const i = prog < 0.33 ? 0 : prog < 0.66 ? 1 : 2;
+      const getStorySphere = useCallback(() => ({ s: prog * 2, scale: 0.7 + prog * 0.5 }), [prog]);
+
+      return (
+        <section ref={ref} id="story" className="h-[360vh] relative">
+          <div className="sticky top-0 h-[100svh] grid place-items-center overflow-hidden">
+            <SphereCanvas id="c2" mouse={true} getState={getStorySphere} className="absolute inset-0 w-full h-full pointer-events-none" />
+            <div className="absolute inset-x-0 text-center pointer-events-none select-none">
+              {storyItems.map((item, idx) => (
+                <h2 key={item.headline + idx} className={`absolute left-0 right-0 -top-24 sm:-top-32 font-display text-[clamp(64px,14vw,180px)] font-bold tracking-[-0.03em] leading-[1.0] text-white mix-blend-difference transition-all duration-700 ${idx === i ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                  {item.headline}
+                </h2>
+              ))}
+            </div>
+            <p className="absolute bottom-[9vh] left-0 right-0 text-center text-[#9a98a8] px-4 text-body text-base sm:text-lg transition-opacity duration-400 max-w-xl mx-auto leading-[1.6]">
+              {storyItems[i]?.description}
+            </p>
+          </div>
+        </section>
+      );
+    }
+
+    // Card Glow Hook helper
+    function setGlow(e) {
+      const r = e.currentTarget.getBoundingClientRect();
+      e.currentTarget.style.setProperty('--x', (e.clientX - r.left) + 'px');
+      e.currentTarget.style.setProperty('--y', (e.clientY - r.top) + 'px');
+    }
+
+    // Services Section
+    function Services({ data }) {
+      const defaultServices = [
+        { tag: 'Start here', title: 'Digital audit', description: 'We review your website, search, profiles and competitors, then tell you what to fix first.' },
+        { tag: 'Build', title: 'Websites', description: 'Fast, mobile-first sites that make it easy to call, book or buy.' },
+        { tag: 'Platforms', title: 'Social media', description: 'Profiles set up and branded so you look like one company everywhere.', platforms: ['Facebook', 'Instagram', 'LinkedIn', 'YouTube'] },
+        { tag: 'Look', title: 'Design and branding', description: 'Logo, colours, templates, posts and ads people recognise at a glance.' },
+        { tag: 'Every day', title: 'Social media management', description: 'Posts and short videos made and published for you, with replies and a monthly report.' },
+        { tag: 'Scale', title: 'Ads and growth', description: 'Paid campaigns on Meta, Google and YouTube, tracked to enquiries and sales.' },
+      ];
+      const services = (data && data.length > 0) ? data : defaultServices;
+      return (
+        <section id="services" className="py-20 sm:py-28 lg:py-36">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-h1 font-bold text-[clamp(40px,5vw,56px)] tracking-[-0.02em] leading-[1.1] max-w-[15ch] mb-12 text-white">
+              Everything your business needs online.
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {services.map((s, idx) => (
+                <div key={s.id || s.title || idx} onPointerMove={setGlow} className="card-glow relative overflow-hidden bg-card border border-white/10 rounded-[30px] p-8 min-h-[310px] flex flex-col justify-between transition-all duration-300 hover:border-brand/60 hover:-translate-y-1.5">
+                  <div className="relative z-10">
+                    <small className="text-label text-brand font-semibold">{s.tag}</small>
+                    <h3 className="text-h2 font-medium text-[clamp(24px,2.5vw,32px)] tracking-[-0.01em] leading-[1.2] text-white my-3">{s.title}</h3>
+                    <p className="text-[#9a98a8] text-body text-[16px] leading-[1.6]">{s.description || s.desc}</p>
+                    {s.platforms && s.platforms.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mt-5">
+                        {s.platforms.map(p => (
+                          <span key={p} className="text-label border border-white/20 text-[#F4F3F8] rounded-full px-3 py-1 text-[11px] font-semibold">{p}</span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    // Showreel
+    function Showreel() {
+      return (
+        <section id="reel" className="pb-20 sm:pb-28 lg:pb-36">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-h1 font-bold text-[clamp(40px,5vw,56px)] tracking-[-0.02em] leading-[1.1] max-w-[14ch] mb-10 text-white">
+              Watch it scale.
+            </h2>
+            <div className="rounded-[28px] overflow-hidden border border-white/10">
+              <video autoPlay muted loop playsInline preload="auto" aria-label="Scalora showreel" className="w-full aspect-video object-cover block">
+                <source src="./public/assets/showreel.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    // Growth Metrics
+    function GrowthMetrics() {
+      const [isIn, setIsIn] = useState(false);
+      const ref = useRef(null);
+      useEffect(() => {
+        const obs = new IntersectionObserver(e => {
+          if (e[0].isIntersecting) { setIsIn(true); obs.disconnect(); }
+        }, { threshold: 0.4 });
+        if (ref.current) obs.observe(ref.current);
+        return () => obs.disconnect();
+      }, []);
+
+      return (
+        <section ref={ref} id="growth" className="pb-20 sm:pb-28 lg:pb-36">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-h1 font-bold text-[clamp(40px,5vw,56px)] tracking-[-0.02em] leading-[1.1] max-w-[14ch] mb-12 text-white">
+              What growth looks like.
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Reach */}
+              <div onPointerMove={setGlow} className="card-glow relative overflow-hidden bg-card border border-white/10 rounded-[30px] p-8 min-h-[360px] flex flex-col justify-between hover:border-brand/60 hover:-translate-y-1.5 transition-all">
+                <div className="relative z-10 flex flex-col h-full justify-between">
+                  <svg viewBox="0 0 300 150" className="w-full h-[140px] overflow-visible mb-4">
+                    <path d="M10 130C70 125 90 90 140 80S220 40 290 12" fill="none" stroke="#5C6CFF" strokeWidth="5" strokeLinecap="round" pathLength="100" strokeDasharray="100" style={{ strokeDashoffset: isIn ? 0 : 100, transition: 'stroke-dashoffset 2.4s cubic-bezier(.5,0,.2,1)' }} />
+                    <circle cx="10" cy="130" r="7" className="fill-[#0B0A0F] stroke-brand stroke-[4]" />
+                    <circle cx="140" cy="80" r="7" className="fill-[#0B0A0F] stroke-brand stroke-[4]" />
+                    <circle cx="290" cy="12" r="7" className="fill-[#0B0A0F] stroke-brand stroke-[4]" />
+                  </svg>
+                  <div>
+                    <small className="text-label text-brand font-semibold">{`Reach`}</small>
+                    <h3 className="text-h2 font-medium text-[clamp(24px,2.5vw,30px)] tracking-[-0.01em] leading-[1.2] text-white mt-1 mb-2">More people find you</h3>
+                    <p className="text-[#9a98a8] text-body text-[16px] leading-[1.6]">Search, social and video working together.</p>
+                    <div className="text-label text-[#9a98a8]/60 mt-3 text-[11px]">Illustrative example</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Followers */}
+              <div onPointerMove={setGlow} className="card-glow relative overflow-hidden bg-card border border-white/10 rounded-[30px] p-8 min-h-[360px] flex flex-col justify-between hover:border-brand/60 hover:-translate-y-1.5 transition-all">
+                <div className="relative z-10 flex flex-col h-full justify-between">
+                  <div className="grid grid-cols-3 gap-2 mb-4">
+                    {Array.from({ length: 9 }).map((_, i) => (
+                      <div key={i} className="aspect-square rounded-xl" style={{ backgroundColor: i % 3 === 0 ? '#5C6CFF' : i === 4 ? '#ffffff' : '#1d1c27', animation: 'pulse 4s infinite', animationDelay: `${i * 0.25}s` }} />
+                    ))}
+                  </div>
+                  <div>
+                    <small className="text-label text-brand font-semibold">Followers</small>
+                    <h3 className="text-h2 font-medium text-[clamp(24px,2.5vw,30px)] tracking-[-0.01em] leading-[1.2] text-white mt-1 mb-2">A feed worth following</h3>
+                    <p className="text-[#9a98a8] text-body text-[16px] leading-[1.6]">Consistent posts in one recognisable look.</p>
+                    <div className="text-label text-[#9a98a8]/60 mt-3 text-[11px]">Illustrative example</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Enquiries */}
+              <div onPointerMove={setGlow} className="card-glow relative overflow-hidden bg-card border border-white/10 rounded-[30px] p-8 min-h-[360px] flex flex-col justify-between hover:border-brand/60 hover:-translate-y-1.5 transition-all">
+                <div className="relative z-10 flex flex-col h-full justify-between">
+                  <div className="bg-[#1d1c27] rounded-2xl p-4 h-[140px] flex flex-col justify-center gap-2 overflow-hidden mb-4">
+                    <div className="h-3 rounded-full bg-brand w-[40%] animate-shimmer" />
+                    <div className="h-3 rounded-full bg-[#2d2c3a] w-[75%]" />
+                    <div className="h-3 rounded-full bg-[#2d2c3a] w-[55%] animate-shimmer" style={{ animationDelay: '0.4s' }} />
+                    <div className="h-8 rounded-xl bg-[#2d2c3a] w-[90%]" />
+                  </div>
+                  <div>
+                    <small className="text-label text-brand font-semibold">Enquiries</small>
+                    <h3 className="text-h2 font-medium text-[clamp(24px,2.5vw,30px)] tracking-[-0.01em] leading-[1.2] text-white mt-1 mb-2">A site that converts</h3>
+                    <p className="text-[#9a98a8] text-body text-[16px] leading-[1.6]">Clear pages that make it easy to call or book.</p>
+                    <div className="text-label text-[#9a98a8]/60 mt-3 text-[11px]">Illustrative example</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    // Process Section
+    function ProcessSection({ data }) {
+      const defaultSteps = [
+        { title: 'Analyse', description: 'We audit your digital footprint and your competitors.' },
+        { title: 'Plan', description: 'A simple roadmap with priorities, timing and cost.' },
+        { title: 'Build', description: 'Website, profiles and content, launched together.' },
+        { title: 'Grow', description: 'We manage, measure and improve every month.' },
+      ];
+      const steps = (data && data.length > 0) ? data : defaultSteps;
+      const sizes = [8, 13, 19, 27];
+      return (
+        <section id="how" className="pb-20 sm:pb-28 lg:pb-36">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-h1 font-bold text-[clamp(40px,5vw,56px)] tracking-[-0.02em] leading-[1.1] max-w-[14ch] mb-12 text-white">
+              Four steps. Each one bigger than the last.
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-white/10">
+              {steps.map((s, idx) => (
+                <div key={s.title + idx} className="pt-8 pb-4 pr-6">
+                  <div className="flex items-end gap-2 h-[34px] mb-6">
+                    {sizes.map((sz, j) => (
+                      <span key={j} className={`block rounded-full ${j <= idx ? 'bg-brand' : 'bg-[#2a2935]'}`} style={{ width: sz + 'px', height: sz + 'px' }} />
+                    ))}
+                  </div>
+                  <h3 className="text-h2 font-medium text-[clamp(24px,2.5vw,30px)] tracking-[-0.01em] leading-[1.2] text-white mb-2">{s.title}</h3>
+                  <p className="text-[#9a98a8] text-body text-[16px] leading-[1.6]">{s.description || s.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    // Score Calculator
+    function ScoreCalculator() {
+      const opts = [
+        'Mobile-friendly website',
+        'Google Business profile',
+        'Weekly Instagram posts',
+        'Active Facebook page',
+        'LinkedIn page',
+        'Video on YouTube or Reels',
+        'Consistent brand look',
+      ];
+      const msgs = [
+        'Tap an option to start.',
+        'Barely online. A website and profiles will change this fast.',
+        'Early days. The foundations are missing.',
+        'Getting there. Consistency is the gap.',
+        'Strong base. Video and ads can scale it.',
+        'Well covered. Let’s optimise and grow.'
+      ];
+      const [sel, setSel] = useState(new Set());
+      const toggle = i => {
+        setSel(prev => {
+          const n = new Set(prev);
+          n.has(i) ? n.delete(i) : n.add(i);
+          return n;
+        });
+      };
+      const k = sel.size;
+      const pct = Math.round(k / 7 * 100);
+      const lit = Math.round(k / 7 * NUM_POINTS);
+      const msg = k === 0 ? msgs[0] : k < 2 ? msgs[1] : k < 4 ? msgs[2] : k < 5 ? msgs[3] : k < 7 ? msgs[4] : msgs[5];
+
+      const getScoreSphere = useCallback(() => ({ s: 1, lit, scale: 1.05 }), [lit]);
+
+      return (
+        <section id="score" className="pb-20 sm:pb-28 lg:pb-36">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-h1 font-bold text-[clamp(40px,5vw,56px)] tracking-[-0.02em] leading-[1.1] mb-5 text-white">
+                  How present is your business?
+                </h2>
+                <p className="text-[#9a98a8] text-body text-[18px] leading-[1.6] mb-7">
+                  Tap what you already have. Your sphere lights up dot by dot.
+                </p>
+                <div className="flex flex-wrap gap-2.5">
+                  {opts.map((opt, i) => (
+                    <button key={opt} onClick={()=>toggle(i)} className={`font-sans font-semibold text-[14px] sm:text-[15px] px-5 py-3 rounded-full border transition-all ${sel.has(i) ? 'bg-brand border-brand text-white scale-[1.04]' : 'bg-card border-white/10 text-white hover:border-white/30'}`}>
+                      {opt}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div className="text-center bg-card/60 border border-white/10 rounded-[36px] p-8 flex flex-col items-center">
+                <div className="w-[min(100%,400px)] aspect-square">
+                  <SphereCanvas id="c3" mouse={true} getState={getScoreSphere} className="w-full h-full" />
+                </div>
+                <div className="font-display font-bold text-[clamp(64px,8vw,90px)] tracking-[-0.03em] leading-none text-white -mt-4">{pct}%</div>
+                <p className="text-[#9a98a8] text-body text-[16px] leading-[1.6] max-w-[34ch] my-3 min-h-[3rem]">{msg}</p>
+                <a href="#contact" className="bg-brand text-white font-semibold text-base px-7 py-3.5 rounded-full hover:shadow-[0_12px_40px_-8px_#5C6CFF] mt-2">
+                  Light up the rest with Scalora
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    // What's New
+    function WhatsNew({ data }) {
+      const defaultNews = [
+        { tag: 'Search', title: 'People ask AI, not just Google.', description: 'Answer engines and social search favour clear, expert content. We structure yours to be found and quoted.' },
+        { tag: 'Video', title: 'Short vertical video leads.', description: 'Reels, Shorts and TikTok drive most social attention, so we plan, shoot and edit it for you.' },
+        { tag: 'Commerce', title: 'Social is a shop.', description: 'Customers discover, compare and buy inside the app, often within minutes.' },
+        { tag: 'AI at work', title: 'Faster, with humans in charge.', description: 'AI speeds up research and drafts. Our team keeps your voice and the judgment.' },
+        { tag: 'Creators', title: 'Small voices, real trust.', description: 'Micro-creators often earn more trust than big names.' },
+        { tag: 'Privacy', title: 'Own your audience.', description: 'As tracking rules tighten, email, WhatsApp and first-party data matter more.' },
+      ];
+      const news = (data && data.length > 0) ? data : defaultNews;
+      return (
+        <section id="new" className="pb-20 sm:pb-28 lg:pb-36">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-h1 font-bold text-[clamp(40px,5vw,56px)] tracking-[-0.02em] leading-[1.1] max-w-[14ch] mb-12 text-white">
+              What’s new in digital marketing.
+            </h2>
+            <ul className="border-b border-white/10">
+              {news.map((n, idx) => (
+                <li key={n.id || n.tag + idx} tabIndex={0} className="border-t border-white/10 py-6 sm:py-8 grid grid-cols-1 md:grid-cols-[160px_1fr] gap-4 group cursor-pointer focus:outline-none">
+                  <small className="text-label text-brand font-semibold pt-1">{n.tag}</small>
+                  <div>
+                    <h3 className="text-h2 font-medium text-[clamp(24px,2.8vw,32px)] tracking-[-0.01em] leading-[1.2] text-white transition-all group-hover:translate-x-3 group-hover:text-brand">{n.title}</h3>
+                    <p className="max-h-0 overflow-hidden text-[#9a98a8] text-body text-[16px] leading-[1.6] max-w-[58ch] transition-all duration-500 group-hover:max-h-36 group-hover:mt-3">{n.description || n.desc}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      );
+    }
+
+    // Contact Form
+    function ContactSection({ email }) {
+      const [name, setName] = useState('');
+      const [biz, setBiz] = useState('');
+      const [msg, setMsg] = useState('');
+      const [sent, setSent] = useState(false);
+      const targetEmail = email || 'hello@scalora.com';
+
+      const onSubmit = e => {
+        e.preventDefault();
+        // Save to CMS CRM
+        fetch('/api/inquiries', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, business: biz, message: msg })
+        }).catch(() => {});
+
+        window.location.href = `mailto:${targetEmail}?subject=${encodeURIComponent('Audit request from ' + name)}&body=${encodeURIComponent(biz + '\n\n' + msg)}`;
+        setSent(true);
+      };
+
+      return (
+        <section id="contact" className="pb-20 sm:pb-28 lg:pb-36">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="border border-white/10 rounded-[32px] sm:rounded-[64px] p-8 sm:p-16 grid grid-cols-1 lg:grid-cols-2 gap-10 bg-card relative overflow-hidden">
+              <div className="relative z-10 flex flex-col justify-between">
+                <h2 className="text-h1 font-bold text-[clamp(40px,5vw,56px)] tracking-[-0.02em] leading-[1.1] text-white">
+                  Let’s scale your presence.
+                </h2>
+                <p className="text-[#9a98a8] text-body text-[18px] leading-[1.6] mt-6">
+                  Tell us about your brand, and we’ll review your digital footprint for free.
+                </p>
+              </div>
+              {sent ? (
+                <div className="relative z-10 flex flex-col items-center justify-center p-8 bg-white/[0.03] border border-brand/40 rounded-2xl text-center">
+                  <div className="text-4xl mb-3">✓</div>
+                  <h3 className="text-xl font-bold text-white mb-2">Request Submitted!</h3>
+                  <p className="text-sm text-[#9a98a8]">We've logged your request in our CMS and prepared your email. We'll be in touch shortly!</p>
+                </div>
+              ) : (
+                <form onSubmit={onSubmit} className="relative z-10 flex flex-col gap-4">
+                  <input required value={name} onChange={e=>setName(e.target.value)} placeholder="Your name" className="w-full bg-white/[0.05] border border-white/10 rounded-2xl px-5 py-4 text-lg font-semibold text-white placeholder-[#9a98a8] focus:outline-none focus:ring-2 focus:ring-brand" />
+                  <input value={biz} onChange={e=>setBiz(e.target.value)} placeholder="Business and city" className="w-full bg-white/[0.05] border border-white/10 rounded-2xl px-5 py-4 text-lg font-semibold text-white placeholder-[#9a98a8] focus:outline-none focus:ring-2 focus:ring-brand" />
+                  <textarea rows={3} value={msg} onChange={e=>setMsg(e.target.value)} placeholder="What do you want to achieve?" className="w-full bg-white/[0.05] border border-white/10 rounded-2xl px-5 py-4 text-lg font-semibold text-white placeholder-[#9a98a8] focus:outline-none focus:ring-2 focus:ring-brand resize-none" />
+                  <button type="submit" className="bg-brand text-white font-semibold text-lg px-8 py-4 rounded-full transition-all hover:shadow-[0_12px_40px_-8px_#5C6CFF] mt-2">
+                    Send my request
+                  </button>
+                </form>
+              )}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    // Footer
+    function Footer() {
+      return (
+        <footer className="py-12 border-t border-white/10 bg-[#0B0A0F]">
+          <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6 text-[#9a98a8] text-sm">
+            <div>
+              <img src="./public/assets/logo-footer.jpg" alt="Scalora" className="w-[min(340px,70vw)] h-auto mb-3" onError={e=>{e.target.onerror=null;e.target.src='./public/assets/logo.jpg'}} />
+              <div>Websites, social media and design for growing businesses.</div>
+            </div>
+            <div className="flex flex-col sm:items-end gap-2">
+              <a href="./public/admin.html" target="_blank" className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 rounded-full text-xs font-semibold text-white transition-colors">
+                <span className="w-2 h-2 rounded-full bg-brand animate-pulse"></span>
+                <span>WP-Style CMS Admin ↗</span>
+              </a>
+              <div>© 2026 Scalora. All rights reserved.</div>
+            </div>
+          </div>
+        </footer>
+      );
+    }
+
+    // App Component
+    function App() {
+      const [cms, setCms] = useState(null);
+
+      useEffect(() => {
+        fetch('/api/content')
+          .then(r => r.ok ? r.json() : Promise.reject())
+          .then(data => setCms(data))
+          .catch(() => {
+            const cached = localStorage.getItem('scalora_cms_content');
+            if (cached) {
+              try { setCms(JSON.parse(cached)); return; } catch {}
+            }
+            fetch('./data/site-content.json')
+              .then(r => r.ok ? r.json() : Promise.reject())
+              .then(data => setCms(data))
+              .catch(() => {});
+          });
+      }, []);
+
+      return (
+        <div className="min-h-screen bg-bg text-ink">
+          <CursorTrail />
+          <Navbar />
+          <main id="top">
+            <Hero data={cms?.hero} />
+            <Marquee items={cms?.marquee || ['Websites', 'Social media', 'Design', 'Video', 'Ads']} />
+            <StorySection data={cms?.story} />
+            <Services data={cms?.services} />
+            <Showreel />
+            <GrowthMetrics />
+            <ProcessSection data={cms?.process} />
+            <ScoreCalculator />
+            <WhatsNew data={cms?.posts} />
+            <ContactSection email={cms?.settings?.contactEmail} />
+            <Marquee items={['Scale your presence', 'Scale your presence']} reverse={true} />
+          </main>
+          <Footer />
+        </div>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
